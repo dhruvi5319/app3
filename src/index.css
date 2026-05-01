@@ -1,111 +1,70 @@
+@import "tailwindcss";
+@import "@uswds/uswds/css/uswds.min.css";
+
+@theme {
+  --font-public-sans: var(--uswds-font-sans, "Public Sans", sans-serif);
+  --font-merriweather: var(--uswds-font-serif, "Merriweather", serif);
+
+  /* USWDS color tokens */
+  --color-blue-10: var(--uswds-color-blue-10, #d9e8f6);
+  --color-blue-30: var(--uswds-color-blue-30, #73b3d8);
+  --color-blue-40: var(--uswds-color-blue-40, #4f97d1);
+  --color-blue-50: var(--uswds-color-blue-50, #2672de);
+  --color-blue-60: var(--uswds-color-blue-60, #1a4480);
+  --color-blue-70: var(--uswds-color-blue-70, #162e51);
+  --color-blue-80: var(--uswds-color-blue-80, #112239);
+  --color-blue-90: var(--uswds-color-blue-90, #0b1526);
+  --color-gray-5: var(--uswds-color-gray-5, #f0f0f0);
+  --color-gray-10: var(--uswds-color-gray-10, #e6e6e6);
+  --color-gray-20: var(--uswds-color-gray-20, #c9c9c9);
+  --color-gray-30: var(--uswds-color-gray-30, #adadad);
+  --color-gray-40: var(--uswds-color-gray-40, #919191);
+  --color-gray-50: var(--uswds-color-gray-50, #757575);
+  --color-gray-60: var(--uswds-color-gray-60, #5c5c5c);
+  --color-gray-70: var(--uswds-color-gray-70, #454545);
+  --color-gray-80: var(--uswds-color-gray-80, #2e2e2e);
+  --color-gray-90: var(--uswds-color-gray-90, #1b1b1b);
+  --color-indigo-80: var(--uswds-color-indigo-80, #3d3a5c);
+  --color-indigo-90: var(--uswds-color-indigo-90, #1a184d);
+  --color-violet-90: var(--uswds-color-violet-90, #2b1a44);
+  --color-white: #ffffff;
+
+  /* USWDS spacing (1 unit = 8px) */
+  --spacing-u-1: var(--uswds-spacing-1, 0.5rem);
+  --spacing-u-2: var(--uswds-spacing-2, 1rem);
+  --spacing-u-3: var(--uswds-spacing-3, 1.5rem);
+  --spacing-u-4: var(--uswds-spacing-4, 2rem);
+  --spacing-u-6: var(--uswds-spacing-6, 3rem);
+
+  /* USWDS font sizes */
+  --text-uswds-xs: var(--uswds-font-size-xs, 0.75rem);
+  --text-uswds-sm: var(--uswds-font-size-sm, 0.875rem);
+  --text-uswds-md: var(--uswds-font-size-md, 1rem);
+  --text-uswds-lg: var(--uswds-font-size-lg, 1.25rem);
+  --text-uswds-xl: var(--uswds-font-size-xl, 1.5rem);
+  --text-uswds-2xl: var(--uswds-font-size-2xl, 2rem);
+  --text-uswds-3xl: var(--uswds-font-size-3xl, 2.5rem);
+}
+
+/* Hero gradient CSS custom properties (TechArch §3) */
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+  --hero-gradient-clear-day: linear-gradient(180deg, var(--color-blue-40), var(--color-blue-60));
+  --hero-gradient-clear-night: linear-gradient(180deg, var(--color-blue-80), var(--color-gray-90));
+  --hero-gradient-partly-cloudy-day: linear-gradient(180deg, var(--color-blue-30), var(--color-blue-50));
+  --hero-gradient-partly-cloudy-night: linear-gradient(180deg, var(--color-blue-70), var(--color-gray-80));
+  --hero-gradient-overcast-day: linear-gradient(180deg, var(--color-gray-20), var(--color-gray-40));
+  --hero-gradient-overcast-night: linear-gradient(180deg, var(--color-gray-60), var(--color-gray-80));
+  --hero-gradient-fog: linear-gradient(180deg, var(--color-gray-10), var(--color-gray-30));
+  --hero-gradient-rain: linear-gradient(180deg, var(--color-blue-50), var(--color-gray-50));
+  --hero-gradient-snow: linear-gradient(180deg, var(--color-gray-5), var(--color-blue-10));
+  --hero-gradient-thunderstorm: linear-gradient(180deg, var(--color-gray-60), var(--color-blue-80));
+}
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
-
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
-  color-scheme: light dark;
-  color: var(--text);
-  background: var(--bg);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  @media (max-width: 1024px) {
-    font-size: 16px;
+/* Reduced motion: disable all animations */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
-  }
-
-  #social .button-icon {
-    filter: invert(1) brightness(2);
-  }
-}
-
-#root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
-h1,
-h2 {
-  font-family: var(--heading);
-  font-weight: 500;
-  color: var(--text-h);
-}
-
-h1 {
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
-  }
-}
-h2 {
-  font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
-  }
-}
-p {
-  margin: 0;
-}
-
-code,
-.counter {
-  font-family: var(--mono);
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
-}
-
-code {
-  font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
 }
