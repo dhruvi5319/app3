@@ -30,7 +30,14 @@ Decimal phases appear between their surrounding integers in numeric order.
   4. Current temperature (integer), feels-like, high/low, precipitation probability, humidity, wind speed, and condition label + icon are all visible above the fold on mobile (375px)
   5. °C/°F toggle on the main screen switches units instantly; preference survives page reload
   6. Skeleton loading state appears during fetch; a clear error message with retry button appears on API failure — the screen is never blank
-**Plans**: TBD
+**Plans**: 5 plans
+
+Plans:
+- [ ] 01-01-PLAN.md — Project scaffold: Vite + React 19 + TypeScript strict + Tailwind v4 + USWDS + TanStack Query + Playwright
+- [ ] 01-02-PLAN.md — Data layer TDD: TypeScript interfaces, transformation utilities, localStorage helpers
+- [ ] 01-03-PLAN.md — Search UI: SearchBar (centered/header), autocomplete, GPS opt-in, recent chips, F0 Playwright tests
+- [ ] 01-04-PLAN.md — Current Conditions: weather hook, WeatherHero, skeleton, error state, unit toggle, F1 Playwright tests
+- [ ] 01-05-PLAN.md — App integration: App.tsx, AppShell, Footer attribution, AlertBanner, full e2e integration tests
 
 ### Phase 2: Forecasts & Visuals
 **Goal**: Users can see the full weather picture — 24-hour and 7-day forecast — with accurate icons and condition-aware backgrounds
@@ -75,7 +82,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/TBD | Not started | - |
+| 1. Foundation | 0/5 | Planned | - |
 | 2. Forecasts & Visuals | 0/TBD | Not started | - |
 | 3. Layout, Details & Freshness | 0/TBD | Not started | - |
 | 4. Accessibility & Deployment | 0/TBD | Not started | - |
