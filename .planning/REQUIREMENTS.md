@@ -111,51 +111,51 @@
 
 ## Traceability
 
-*Populated during roadmap creation.*
+*Populated during roadmap creation — 2026-05-01.*
 
 | Requirement | Phase | Status |
 |---|---|---|
-| F0-01 | — | Pending |
-| F0-02 | — | Pending |
-| F0-03 | — | Pending |
-| F0-04 | — | Pending |
-| F0-05 | — | Pending |
-| F1-01 | — | Pending |
-| F1-02 | — | Pending |
-| F1-03 | — | Pending |
-| F1-04 | — | Pending |
-| F1-05 | — | Pending |
-| F1-06 | — | Pending |
-| F2-01 | — | Pending |
-| F2-02 | — | Pending |
-| F2-03 | — | Pending |
-| F3-01 | — | Pending |
-| F3-02 | — | Pending |
-| F3-03 | — | Pending |
-| F4-01 | — | Pending |
-| F4-02 | — | Pending |
-| F4-03 | — | Pending |
-| F5-01 | — | Pending |
-| F5-02 | — | Pending |
-| F5-03 | — | Pending |
-| F6-01 | — | Pending |
-| F6-02 | — | Pending |
-| F6-03 | — | Pending |
-| F7-01 | — | Pending |
-| F7-02 | — | Pending |
-| F7-03 | — | Pending |
-| F8-01 | — | Pending |
-| F8-02 | — | Pending |
-| F8-03 | — | Pending |
-| F8-04 | — | Pending |
-| F8-05 | — | Pending |
-| F9-01 | — | Pending |
-| F9-02 | — | Pending |
+| F0-01 | Phase 1 | Pending |
+| F0-02 | Phase 1 | Pending |
+| F0-03 | Phase 1 | Pending |
+| F0-04 | Phase 1 | Pending |
+| F0-05 | Phase 1 | Pending |
+| F1-01 | Phase 1 | Pending |
+| F1-02 | Phase 1 | Pending |
+| F1-03 | Phase 1 | Pending |
+| F1-04 | Phase 1 | Pending |
+| F1-05 | Phase 1 | Pending |
+| F1-06 | Phase 1 | Pending |
+| F2-01 | Phase 2 | Pending |
+| F2-02 | Phase 2 | Pending |
+| F2-03 | Phase 2 | Pending |
+| F3-01 | Phase 2 | Pending |
+| F3-02 | Phase 2 | Pending |
+| F3-03 | Phase 2 | Pending |
+| F4-01 | Phase 2 | Pending |
+| F4-02 | Phase 2 | Pending |
+| F4-03 | Phase 2 | Pending |
+| F5-01 | Phase 3 | Pending |
+| F5-02 | Phase 3 | Pending |
+| F5-03 | Phase 3 | Pending |
+| F6-01 | Phase 3 | Pending |
+| F6-02 | Phase 3 | Pending |
+| F6-03 | Phase 3 | Pending |
+| F7-01 | Phase 3 | Pending |
+| F7-02 | Phase 3 | Pending |
+| F7-03 | Phase 3 | Pending |
+| F8-01 | Phase 4 | Pending |
+| F8-02 | Phase 4 | Pending |
+| F8-03 | Phase 4 | Pending |
+| F8-04 | Phase 4 | Pending |
+| F8-05 | Phase 4 | Pending |
+| F9-01 | Phase 4 | Pending |
+| F9-02 | Phase 4 | Pending |
 
 **Coverage:**
 - v1 requirements: 36 total
-- Mapped to phases: 0 (pending roadmap)
-- Unmapped: 36 ⚠️
+- Mapped to phases: 36 ✓
+- Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-05-01*
