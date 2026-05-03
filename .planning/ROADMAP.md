@@ -20,7 +20,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 ## Phase Details
 
 ### Phase 1: Foundation
-**Status**: executing
+**Status**: awaiting decision
 **Goal**: Users can find any city and see current weather conditions immediately — no blank screens, no stalled states
 **Depends on**: Nothing (first phase)
 **Requirements**: F0-01, F0-02, F0-03, F0-04, F0-05, F1-01, F1-02, F1-03, F1-04, F1-05, F1-06
